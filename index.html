@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login Website</title>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" href="style.css" />
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <header id="header" class="header">
+            <span class="logo">Logo</span>
+            <nav class="nav">
+                <a class="link" href="#">Home</a>
+                <a class="link" href="#">About</a>
+                <a class="link" href="#">Services</a>
+                <a class="link" href="#">Contact</a>
+                <a class="login-btn" href="#">Login</a>
+            </nav>
+        </header>
+        <div class="form-container">
+            <form class="login-form">
+                <ion-icon class="close-icon" name="close"></ion-icon>
+                <h2>Login</h2>
+                <div class="login-input">
+                    <ion-icon name="mail"></ion-icon>
+                    <input class="enter-text" type="email" required />
+                    <label for="email">Email</label>
+                </div>
+                <div class="login-input">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <input type="password" class="enter-text" required />
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot-box">
+                    <div class="remember-box">
+                        <input type="checkbox" name="" id="remember" />
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <span class="forgot">Forgot Password?</span>
+                </div>
+                <button class="btn-login">Login</button>
+                <p class="register-text">
+                    Don't have an account?
+                    <a href="#" class="register go-to-register-form"
+                        >Register</a
+                    >
+                </p>
+            </form>
+            <form class="register-form">
+                <ion-icon class="close-icon" name="close"></ion-icon>
+                <h2>Registration</h2>
+                <div class="login-input">
+                    <ion-icon name="person"></ion-icon>
+                    <input class="enter-text" type="email" required />
+                    <label for="text">Username</label>
+                </div>
+                <div class="login-input">
+                    <ion-icon name="mail"></ion-icon>
+                    <input class="enter-text" type="email" required />
+                    <label for="email">Email</label>
+                </div>
+                <div class="login-input">
+                    <ion-icon name="lock-closed"></ion-icon>
+                    <input class="enter-text" type="email" required />
+                    <label for="email">Password</label>
+                </div>
+                <div class="agree-box">
+                    <input type="checkbox" name="" id="agree" />
+                    <label for="agree">Remember me</label>
+                </div>
+                <button class="btn-login">Register</button>
+                <p class="register-text">
+                    Don't have an account?
+                    <a href="#" class="register go-to-login-form">Login</a>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
